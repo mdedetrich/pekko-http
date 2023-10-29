@@ -13,15 +13,21 @@
 
 package docs.http.javadsl.server;
 
+import static org.apache.pekko.http.javadsl.server.Directives.*;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStreamReader;
+import java.time.Duration;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
 import org.apache.pekko.Done;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.actor.ActorSystem;
-import org.apache.pekko.actor.CoordinatedShutdown;
 import org.apache.pekko.http.javadsl.*;
 import org.apache.pekko.http.javadsl.marshallers.jackson.Jackson;
 import org.apache.pekko.http.javadsl.model.*;
 import org.apache.pekko.http.javadsl.model.headers.Connection;
-import org.apache.pekko.http.javadsl.server.AllDirectives;
 import org.apache.pekko.http.javadsl.server.Directives;
 import org.apache.pekko.http.javadsl.server.Route;
 import org.apache.pekko.http.javadsl.unmarshalling.Unmarshaller;
@@ -35,15 +41,6 @@ import org.apache.pekko.stream.javadsl.Sink;
 import org.apache.pekko.stream.javadsl.Source;
 import org.apache.pekko.util.ByteString;
 import scala.concurrent.ExecutionContextExecutor;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStreamReader;
-import java.time.Duration;
-import java.util.concurrent.CompletionStage;
-import java.util.concurrent.TimeUnit;
-
-import static org.apache.pekko.http.javadsl.server.Directives.*;
 
 @SuppressWarnings("unused")
 public class HttpServerExampleDocTest {

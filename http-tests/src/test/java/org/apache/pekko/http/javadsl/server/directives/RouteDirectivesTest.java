@@ -13,6 +13,7 @@
 
 package org.apache.pekko.http.javadsl.server.directives;
 
+import java.util.concurrent.CompletableFuture;
 import org.apache.pekko.http.javadsl.model.*;
 import org.apache.pekko.http.javadsl.model.headers.Location;
 import org.apache.pekko.http.javadsl.server.Directives;
@@ -21,9 +22,6 @@ import org.apache.pekko.http.javadsl.testkit.TestRoute;
 import org.apache.pekko.stream.javadsl.Sink;
 import org.apache.pekko.util.ByteString;
 import org.junit.Test;
-
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
 
 public class RouteDirectivesTest extends JUnitRouteTest {
 

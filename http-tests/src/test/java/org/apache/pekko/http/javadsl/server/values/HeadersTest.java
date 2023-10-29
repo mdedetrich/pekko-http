@@ -13,16 +13,14 @@
 
 package org.apache.pekko.http.javadsl.server.values;
 
-import org.junit.Test;
-
-import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
-import org.apache.pekko.http.javadsl.testkit.TestRoute;
+import static org.apache.pekko.http.javadsl.server.Directives.*;
 
 import org.apache.pekko.http.javadsl.model.*;
 import org.apache.pekko.http.javadsl.model.headers.Age;
 import org.apache.pekko.http.javadsl.model.headers.RawHeader;
-
-import static org.apache.pekko.http.javadsl.server.Directives.*;
+import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
+import org.apache.pekko.http.javadsl.testkit.TestRoute;
+import org.junit.Test;
 
 public class HeadersTest extends JUnitRouteTest {
   final RawHeader testHeaderInstance = RawHeader.create("X-Test-Header", "abcdef-test");

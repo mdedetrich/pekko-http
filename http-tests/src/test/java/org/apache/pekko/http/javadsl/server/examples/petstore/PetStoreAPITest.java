@@ -13,20 +13,17 @@
 
 package org.apache.pekko.http.javadsl.server.examples.petstore;
 
+import static org.junit.Assert.*;
+
+import java.util.HashMap;
+import java.util.Map;
 import org.apache.pekko.http.javadsl.marshallers.jackson.Jackson;
 import org.apache.pekko.http.javadsl.model.HttpRequest;
 import org.apache.pekko.http.javadsl.model.MediaTypes;
 import org.apache.pekko.http.javadsl.model.StatusCodes;
 import org.apache.pekko.http.javadsl.testkit.*;
-
-import static org.junit.Assert.*;
-
 import org.apache.pekko.http.javadsl.testkit.TestRoute;
-
 import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class PetStoreAPITest extends JUnitRouteTest {
   @Test

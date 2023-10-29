@@ -13,6 +13,10 @@
 
 package org.apache.pekko.http.javadsl;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.dispatch.Futures;
@@ -28,11 +32,6 @@ import org.apache.pekko.stream.javadsl.Sink;
 import org.apache.pekko.stream.javadsl.Source;
 import scala.concurrent.Future;
 import scala.concurrent.duration.FiniteDuration;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.CompletionStage;
-import java.util.concurrent.TimeUnit;
 
 public class WSEchoTestClientApp {
   private static final Function<Message, String> messageStringifier =

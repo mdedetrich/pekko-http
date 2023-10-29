@@ -16,8 +16,6 @@ package org.apache.pekko.http.javadsl.model;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.util.Optional;
-
-import org.apache.pekko.http.javadsl.model.headers.HttpEncodingRanges;
 import org.apache.pekko.util.OptionConverters;
 
 public abstract class RemoteAddress {

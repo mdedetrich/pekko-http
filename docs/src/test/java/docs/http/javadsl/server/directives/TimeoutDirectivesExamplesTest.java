@@ -13,6 +13,12 @@
 
 package docs.http.javadsl.server.directives;
 
+import com.typesafe.config.Config;
+import com.typesafe.config.ConfigFactory;
+import java.util.Optional;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.http.javadsl.Http;
 import org.apache.pekko.http.javadsl.ServerBinding;
@@ -23,17 +29,10 @@ import org.apache.pekko.http.javadsl.model.StatusCodes;
 import org.apache.pekko.http.javadsl.server.AllDirectives;
 import org.apache.pekko.http.javadsl.server.Route;
 import org.apache.pekko.testkit.TestKit;
-import com.typesafe.config.Config;
-import com.typesafe.config.ConfigFactory;
 import org.junit.After;
 import org.junit.Ignore;
 import org.junit.Test;
 import scala.concurrent.duration.Duration;
-
-import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
-import java.util.concurrent.TimeUnit;
 
 public class TimeoutDirectivesExamplesTest extends AllDirectives {
   // #testSetup

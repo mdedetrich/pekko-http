@@ -19,7 +19,6 @@ import org.apache.pekko.actor.typed.ActorSystem;
 import org.apache.pekko.actor.typed.javadsl.Adapter;
 import org.apache.pekko.http.javadsl.model.HttpRequest;
 import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
-
 import org.apache.pekko.http.javadsl.testkit.TestRoute;
 import org.apache.pekko.http.javadsl.testkit.TestRouteResult;
 import org.junit.Test;

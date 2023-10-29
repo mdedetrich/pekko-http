@@ -13,14 +13,13 @@
 
 package docs.http.javadsl;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Arrays;
 import org.apache.pekko.http.javadsl.model.*;
 import org.apache.pekko.http.javadsl.model.headers.Authorization;
 import org.junit.Test;
-
-import java.util.Arrays;
-
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 public class HttpResponseDetailedStringExampleTest {
 

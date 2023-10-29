@@ -13,13 +13,13 @@
 
 package org.apache.pekko.http.javadsl.model;
 
+import static org.junit.Assert.assertEquals;
+
+import java.util.Optional;
 import org.apache.pekko.http.scaladsl.model.IllegalUriException;
 import org.apache.pekko.japi.Pair;
 import org.junit.Test;
 import org.scalatestplus.junit.JUnitSuite;
-
-import java.util.Optional;
-import static org.junit.Assert.assertEquals;
 
 public class UriTest extends JUnitSuite {
 

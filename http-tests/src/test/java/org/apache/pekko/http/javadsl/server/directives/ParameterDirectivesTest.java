@@ -16,13 +16,11 @@ package org.apache.pekko.http.javadsl.server.directives;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map;
-
-import org.junit.Test;
-
 import org.apache.pekko.http.javadsl.model.HttpRequest;
-import org.apache.pekko.http.javadsl.unmarshalling.StringUnmarshallers;
 import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
 import org.apache.pekko.http.javadsl.testkit.TestRoute;
+import org.apache.pekko.http.javadsl.unmarshalling.StringUnmarshallers;
+import org.junit.Test;
 
 public class ParameterDirectivesTest extends JUnitRouteTest {
 

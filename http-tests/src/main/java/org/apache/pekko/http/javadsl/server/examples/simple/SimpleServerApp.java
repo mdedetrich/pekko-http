@@ -13,6 +13,21 @@
 
 package org.apache.pekko.http.javadsl.server.examples.simple;
 
+import static org.apache.pekko.http.javadsl.server.Directives.*;
+import static org.apache.pekko.http.javadsl.server.PathMatchers.integerSegment;
+import static org.apache.pekko.http.javadsl.unmarshalling.Unmarshaller.entityToString;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.Executor;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManagerFactory;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.http.javadsl.ConnectionContext;
 import org.apache.pekko.http.javadsl.Http;
@@ -20,23 +35,6 @@ import org.apache.pekko.http.javadsl.HttpsConnectionContext;
 import org.apache.pekko.http.javadsl.server.PathMatchers;
 import org.apache.pekko.http.javadsl.server.Route;
 import org.apache.pekko.http.javadsl.unmarshalling.StringUnmarshallers;
-
-import javax.net.ssl.KeyManagerFactory;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.TrustManagerFactory;
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.*;
-import java.security.cert.CertificateException;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
-import java.util.concurrent.Executor;
-import java.util.function.BiFunction;
-import java.util.function.Function;
-
-import static org.apache.pekko.http.javadsl.server.Directives.*;
-import static org.apache.pekko.http.javadsl.server.PathMatchers.integerSegment;
-import static org.apache.pekko.http.javadsl.unmarshalling.Unmarshaller.entityToString;
 
 // #https-http-config
 

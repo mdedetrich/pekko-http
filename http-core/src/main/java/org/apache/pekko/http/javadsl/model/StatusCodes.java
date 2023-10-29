@@ -13,11 +13,10 @@
 
 package org.apache.pekko.http.javadsl.model;
 
+import java.util.Optional;
 import org.apache.pekko.annotation.ApiMayChange;
 import org.apache.pekko.http.impl.util.Util;
 import org.apache.pekko.http.scaladsl.model.StatusCodes$;
-
-import java.util.Optional;
 
 /**
  * Contains the set of predefined status-codes along with static methods to access and create custom

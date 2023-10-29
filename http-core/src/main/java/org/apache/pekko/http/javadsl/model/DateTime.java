@@ -13,9 +13,8 @@
 
 package org.apache.pekko.http.javadsl.model;
 
-import org.apache.pekko.http.impl.util.Util;
-
 import java.util.Optional;
+import org.apache.pekko.http.impl.util.Util;
 
 /**
  * Immutable, fast and efficient Date + Time implementation without any dependencies. Does not

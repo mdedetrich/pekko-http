@@ -44,7 +44,7 @@ addSbtPlugin("com.dwijnand" % "sbt-dynver" % "4.1.1")
 addSbtPlugin("org.mdedetrich" % "sbt-apache-sonatype" % "0.1.10")
 addSbtPlugin("com.github.pjfanning" % "sbt-source-dist" % "0.1.10")
 addSbtPlugin("net.virtual-void" % "sbt-hackers-digest" % "0.1.2")
-addSbtPlugin("com.lightbend.sbt" % "sbt-java-formatter" % "0.7.0")
+addSbtPlugin("com.lightbend.sbt" % "sbt-java-formatter" % "0.8.0")
 
 // used in ValidatePullRequest to check github PR comments whether to build all subprojects
 libraryDependencies += "org.kohsuke" % "github-api" % "1.306"

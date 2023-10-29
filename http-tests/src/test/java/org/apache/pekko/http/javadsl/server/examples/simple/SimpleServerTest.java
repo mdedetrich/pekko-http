@@ -15,7 +15,6 @@ package org.apache.pekko.http.javadsl.server.examples.simple;
 
 import org.apache.pekko.http.javadsl.model.HttpRequest;
 import org.apache.pekko.http.javadsl.testkit.*;
-
 import org.junit.Test;
 
 public class SimpleServerTest extends JUnitRouteTest {

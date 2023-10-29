@@ -13,6 +13,11 @@
 
 package org.apache.pekko.http.javadsl.server;
 
+import static org.apache.pekko.http.javadsl.server.Directives.*;
+
+import java.util.Optional;
+import java.util.concurrent.*;
+import java.util.function.Function;
 import org.apache.pekko.NotUsed;
 import org.apache.pekko.actor.ActorSystem;
 import org.apache.pekko.http.javadsl.Http;
@@ -28,12 +33,6 @@ import org.apache.pekko.http.javadsl.unmarshalling.Unmarshaller;
 import org.apache.pekko.stream.javadsl.Source;
 import org.apache.pekko.util.ByteString;
 import scala.concurrent.duration.Duration;
-
-import java.util.Optional;
-import java.util.concurrent.*;
-import java.util.function.Function;
-
-import static org.apache.pekko.http.javadsl.server.Directives.*;
 
 public class JavaTestServer {
 

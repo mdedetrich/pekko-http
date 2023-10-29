@@ -13,19 +13,17 @@
 
 package docs.http.javadsl;
 
-import org.junit.Test;
+import static org.apache.pekko.http.javadsl.server.Directives.*;
 import static org.junit.Assert.assertEquals;
 
+import com.fasterxml.jackson.annotation.JsonRootName;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.TimeUnit;
-import com.fasterxml.jackson.annotation.JsonRootName;
-
-import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
 import org.apache.pekko.http.javadsl.model.*;
 import org.apache.pekko.http.javadsl.server.Route;
+import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
 import org.apache.pekko.http.javadsl.unmarshalling.Unmarshaller;
-
-import static org.apache.pekko.http.javadsl.server.Directives.*;
+import org.junit.Test;
 
 public class JacksonXmlExampleTest extends JUnitRouteTest {
 

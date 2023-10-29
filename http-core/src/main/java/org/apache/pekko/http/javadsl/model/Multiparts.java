@@ -13,18 +13,16 @@
 
 package org.apache.pekko.http.javadsl.model;
 
-import org.apache.pekko.stream.javadsl.Source;
-import scala.collection.immutable.List;
-import scala.collection.immutable.Nil$;
+import static org.apache.pekko.http.impl.util.Util.convertArray;
+import static org.apache.pekko.http.impl.util.Util.convertMapToScala;
 
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.Map;
-
 import org.apache.pekko.http.ccompat.MapHelpers;
-
-import static org.apache.pekko.http.impl.util.Util.convertArray;
-import static org.apache.pekko.http.impl.util.Util.convertMapToScala;
+import org.apache.pekko.stream.javadsl.Source;
+import scala.collection.immutable.List;
+import scala.collection.immutable.Nil$;
 
 /** Constructors for Multipart instances */
 public final class Multiparts {

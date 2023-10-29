@@ -13,8 +13,8 @@
 
 package org.apache.pekko.http.javadsl.model.headers;
 
-import org.apache.pekko.http.scaladsl.model.headers.HttpOriginRange$;
 import org.apache.pekko.http.impl.util.Util;
+import org.apache.pekko.http.scaladsl.model.headers.HttpOriginRange$;
 
 /** @see HttpOriginRanges for convenience access to often used values. */
 public abstract class HttpOriginRange {

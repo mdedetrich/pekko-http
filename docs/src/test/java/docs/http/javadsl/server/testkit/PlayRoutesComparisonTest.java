@@ -13,6 +13,12 @@
 
 package docs.http.javadsl.server.testkit;
 
+import static org.apache.pekko.http.javadsl.server.Directives.*;
+import static org.apache.pekko.http.javadsl.server.PathMatchers.*;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 import org.apache.pekko.http.javadsl.model.HttpRequest;
 import org.apache.pekko.http.javadsl.model.StatusCodes;
 import org.apache.pekko.http.javadsl.server.AllDirectives;
@@ -20,13 +26,6 @@ import org.apache.pekko.http.javadsl.server.Route;
 import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
 import org.apache.pekko.http.javadsl.testkit.TestRoute;
 import org.junit.Test;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
-import static org.apache.pekko.http.javadsl.server.PathMatchers.*;
-import static org.apache.pekko.http.javadsl.server.Directives.*;
 
 public class PlayRoutesComparisonTest extends JUnitRouteTest {
 
