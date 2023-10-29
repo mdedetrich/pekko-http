@@ -13,16 +13,14 @@
 
 package org.apache.pekko.http.javadsl.model;
 
-import org.apache.pekko.http.scaladsl.model.AttributeKey$;
-import org.apache.pekko.stream.scaladsl.TLSPlacebo;
-import org.junit.Test;
-import org.scalatestplus.junit.JUnitSuite;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
+import org.apache.pekko.http.scaladsl.model.AttributeKey$;
+import org.junit.Test;
+import org.scalatestplus.junit.JUnitSuite;
 
 public class HttpMessageTest extends JUnitSuite {
   @Test

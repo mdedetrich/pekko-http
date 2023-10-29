@@ -18,10 +18,9 @@ package org.apache.pekko.http.javadsl.model.sse;
 
 import java.util.Optional;
 import java.util.OptionalInt;
-
+import org.apache.pekko.http.impl.util.Util;
 import org.apache.pekko.util.OptionConverters;
 import scala.Option;
-import org.apache.pekko.http.impl.util.Util;
 
 /**
  * Representation of a server-sent event. According to the specification, an empty data field

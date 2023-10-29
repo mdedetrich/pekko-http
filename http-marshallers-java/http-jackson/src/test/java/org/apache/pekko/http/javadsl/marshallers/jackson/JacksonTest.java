@@ -13,33 +13,25 @@
 
 package org.apache.pekko.http.javadsl.marshallers.jackson;
 
+import static org.junit.Assert.assertTrue;
+
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
-
-import org.apache.pekko.actor.ActorSystem;
-import org.apache.pekko.http.javadsl.model.ContentTypes;
-import org.apache.pekko.http.javadsl.model.HttpEntities;
-import org.apache.pekko.http.javadsl.model.HttpEntity;
-import org.apache.pekko.http.javadsl.model.HttpRequest;
-import org.apache.pekko.http.javadsl.model.RequestEntity;
-import org.apache.pekko.http.javadsl.server.ExceptionHandler;
-import org.apache.pekko.http.javadsl.server.Route;
-import org.apache.pekko.http.javadsl.settings.RoutingSettings;
-import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
-import org.apache.pekko.stream.ActorMaterializer;
-import org.apache.pekko.stream.Materializer;
-
-import org.junit.Test;
-import org.scalatestplus.junit.JUnitSuite;
-
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.apache.pekko.actor.ActorSystem;
+import org.apache.pekko.http.javadsl.model.ContentTypes;
+import org.apache.pekko.http.javadsl.model.HttpEntities;
+import org.apache.pekko.http.javadsl.model.HttpRequest;
+import org.apache.pekko.http.javadsl.model.RequestEntity;
+import org.apache.pekko.http.javadsl.server.Route;
+import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
+import org.apache.pekko.stream.ActorMaterializer;
+import org.apache.pekko.stream.Materializer;
+import org.junit.Test;
 
 public class JacksonTest extends JUnitRouteTest {
 

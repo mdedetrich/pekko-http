@@ -13,11 +13,10 @@
 
 package org.apache.pekko.http.javadsl.model.headers;
 
-import org.apache.pekko.http.impl.util.Util;
-import org.apache.pekko.japi.Option;
-
 import java.util.HashMap;
 import java.util.Map;
+import org.apache.pekko.http.impl.util.Util;
+import org.apache.pekko.japi.Option;
 
 public abstract class HttpChallenge {
   public abstract String scheme();

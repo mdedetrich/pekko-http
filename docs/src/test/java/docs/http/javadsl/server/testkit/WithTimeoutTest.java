@@ -13,11 +13,10 @@
 
 package docs.http.javadsl.server.testkit;
 
+import java.util.concurrent.TimeUnit;
 import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
 import org.junit.Test;
 import scala.concurrent.duration.FiniteDuration;
-
-import java.util.concurrent.TimeUnit;
 
 public class WithTimeoutTest extends JUnitRouteTest {
   // #timeout-setting

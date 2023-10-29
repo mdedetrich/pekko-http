@@ -17,8 +17,8 @@
 
 package org.apache.pekko.http.cors.javadsl.model;
 
-import org.apache.pekko.http.impl.util.Util;
 import org.apache.pekko.http.cors.scaladsl.model.HttpHeaderRange$;
+import org.apache.pekko.http.impl.util.Util;
 
 /** @see HttpHeaderRanges for convenience access to often used values. */
 public abstract class HttpHeaderRange {

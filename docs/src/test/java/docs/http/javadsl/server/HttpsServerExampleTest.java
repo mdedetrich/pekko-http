@@ -13,14 +13,12 @@
 
 package docs.http.javadsl.server;
 
-import org.apache.pekko.actor.ActorSystem;
-import org.apache.pekko.http.javadsl.ConnectionContext;
-import com.typesafe.sslconfig.pekko.PekkoSSLConfig;
-import org.junit.Test;
-import org.scalatestplus.junit.JUnitSuite;
-
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLEngine;
+import org.apache.pekko.actor.ActorSystem;
+import org.apache.pekko.http.javadsl.ConnectionContext;
+import org.junit.Test;
+import org.scalatestplus.junit.JUnitSuite;
 
 /* COMPILE ONLY TEST */
 public class HttpsServerExampleTest extends JUnitSuite {

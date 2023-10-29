@@ -13,18 +13,17 @@
 
 package org.apache.pekko.http.impl.util;
 
-import scala.None$;
-import scala.collection.immutable.Map$;
-import scala.collection.immutable.Seq;
-import org.apache.pekko.stream.scaladsl.Source;
-import org.apache.pekko.http.ccompat.MapHelpers;
-import org.apache.pekko.util.OptionConverters;
-
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.OptionalLong;
+import org.apache.pekko.http.ccompat.MapHelpers;
+import org.apache.pekko.stream.scaladsl.Source;
+import org.apache.pekko.util.OptionConverters;
+import scala.None$;
+import scala.collection.immutable.Map$;
+import scala.collection.immutable.Seq;
 
 /** Contains internal helper methods. */
 public abstract class Util {

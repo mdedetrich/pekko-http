@@ -13,10 +13,11 @@
 
 package docs.http.javadsl.server;
 
+import static org.apache.pekko.http.javadsl.server.Directives.*;
+
 import org.apache.pekko.actor.typed.javadsl.Behaviors;
 import org.apache.pekko.http.javadsl.ConnectHttp;
 import org.apache.pekko.http.javadsl.Http;
-import static org.apache.pekko.http.javadsl.server.Directives.*;
 import org.apache.pekko.http.javadsl.server.Route;
 import org.apache.pekko.stream.ActorMaterializer;
 import org.apache.pekko.stream.Materializer;

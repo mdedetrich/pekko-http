@@ -13,12 +13,12 @@
 
 package docs.http.javadsl;
 
-import org.apache.pekko.http.javadsl.model.*;
-import org.apache.pekko.http.javadsl.model.headers.Authorization;
-import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.util.Arrays;
+import org.apache.pekko.http.javadsl.model.*;
+import org.apache.pekko.http.javadsl.model.headers.Authorization;
+import org.junit.Test;
 
 public class HttpRequestDetailedStringExampleTest {
 

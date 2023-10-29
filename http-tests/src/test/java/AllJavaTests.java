@@ -11,8 +11,8 @@
  * Copyright (C) 2009-2022 Lightbend Inc. <https://www.lightbend.com>
  */
 
-import org.apache.pekko.http.javadsl.server.HandlerBindingTest;
 import docs.http.javadsl.server.HandlerExampleDocTest;
+import org.apache.pekko.http.javadsl.server.HandlerBindingTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

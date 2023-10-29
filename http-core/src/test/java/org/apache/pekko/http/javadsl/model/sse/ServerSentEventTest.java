@@ -18,7 +18,6 @@ package org.apache.pekko.http.javadsl.model.sse;
 
 import java.util.Optional;
 import java.util.OptionalInt;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.scalatestplus.junit.JUnitSuite;

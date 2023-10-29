@@ -13,16 +13,15 @@
 
 package org.apache.pekko.http.javadsl.server.directives;
 
+import static org.apache.pekko.http.javadsl.server.Directives.entity;
+
 import org.apache.pekko.http.javadsl.model.HttpRequest;
 import org.apache.pekko.http.javadsl.model.StatusCodes;
 import org.apache.pekko.http.javadsl.server.Directives;
 import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
 import org.apache.pekko.http.javadsl.testkit.TestRoute;
-
-import org.junit.Test;
 import org.apache.pekko.http.javadsl.unmarshalling.Unmarshaller;
-
-import static org.apache.pekko.http.javadsl.server.Directives.entity;
+import org.junit.Test;
 
 public class MarshallingDirectivesTest extends JUnitRouteTest {
 

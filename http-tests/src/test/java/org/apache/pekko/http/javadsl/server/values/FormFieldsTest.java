@@ -13,18 +13,15 @@
 
 package org.apache.pekko.http.javadsl.server.values;
 
-import org.apache.pekko.http.javadsl.model.ContentTypes;
-import org.junit.Test;
+import static org.apache.pekko.http.javadsl.server.Directives.*;
 
-import org.apache.pekko.http.javadsl.model.HttpCharsets;
+import org.apache.pekko.http.javadsl.model.ContentTypes;
 import org.apache.pekko.http.javadsl.model.HttpRequest;
-import org.apache.pekko.http.javadsl.model.MediaTypes;
-import org.apache.pekko.http.javadsl.unmarshalling.StringUnmarshallers;
 import org.apache.pekko.http.javadsl.testkit.JUnitRouteTest;
 import org.apache.pekko.http.javadsl.testkit.TestRoute;
+import org.apache.pekko.http.javadsl.unmarshalling.StringUnmarshallers;
 import org.apache.pekko.japi.Pair;
-
-import static org.apache.pekko.http.javadsl.server.Directives.*;
+import org.junit.Test;
 
 public class FormFieldsTest extends JUnitRouteTest {
 
