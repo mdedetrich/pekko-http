@@ -28,7 +28,7 @@ object Dependencies {
   val h2specUrl =
     s"https://github.com/summerwind/h2spec/releases/download/v$h2specVersion/$h2specName.$h2specArtifactExtension"
 
-  val scalaTestVersion = "3.2.14"
+  val scalaTestVersion = "3.2.17"
   val specs2Version = "4.10.6"
   val scalaCheckVersion = "1.15.4"
 
